@@ -11,41 +11,39 @@
   <div class="container">
 
     <div class="display">
-      <input type="text">
+      <input type="text" id="display_input">
     </div>
 
     <div class="">
-
       <div class="">
-        <input type="button" class="operator" value="AC">
-        <input type="button" class="operator" value="DE">
-        <input type="button" class="operator" value=".">
-        <input type="button" class="operator" value="/">
+        <input type="button" class="operator" value="AC" onclick="clear_display()">
+        <input type="button" class="operator" value="DE" onclick="delete_one_digit()">
+        <input type="button" class="operator" value="." onclick="add_digit_to_display(this.value)">
+        <input type="button" class="operator" value="/" onclick="add_digit_to_display(this.value)">
       </div>
       <div class="">
-        <input type="button" value="7">
-        <input type="button" value="8">
-        <input type="button" value="9">
-        <input type="button" class="operator" value="*">
+        <input type="button" value="7" onclick="add_digit_to_display(this.value)">
+        <input type="button" value="8" onclick="add_digit_to_display(this.value)">
+        <input type="button" value="9" onclick="add_digit_to_display(this.value)">
+        <input type="button" class="operator" value="*" onclick="add_digit_to_display(this.value)">
       </div>
       <div class="">
-        <input type="button" value="4">
-        <input type="button" value="5">
-        <input type="button" value="6">
-        <input type="button" class="operator" value="-">
+        <input type="button" value="4" onclick="add_digit_to_display(this.value)">
+        <input type="button" value="5" onclick="add_digit_to_display(this.value)">
+        <input type="button" value="6" onclick="add_digit_to_display(this.value)">
+        <input type="button" class="operator" value="-" onclick="add_digit_to_display(this.value)">
       </div>
       <div class="">
-        <input type="button" value="1">
-        <input type="button" value="2">
-        <input type="button" value="3">
-        <input type="button" class="operator" value="+">
+        <input type="button" value="1" onclick="add_digit_to_display(this.value)">
+        <input type="button" value="2" onclick="add_digit_to_display(this.value)">
+        <input type="button" value="3" onclick="add_digit_to_display(this.value)">
+        <input type="button" class="operator" value="+" onclick="add_digit_to_display(this.value)">
       </div>
       <div class="">
-        <input type="button" value="00">
-        <input type="button" value="0">
-        <input type="button" class="operator equal" value="=">
+        <input type="button" value="00" onclick="add_digit_to_display(this.value)">
+        <input type="button" value="0" onclick="add_digit_to_display(this.value)">
+        <input type="button" class="operator equal" id="result" value="=" onclick="calc_operation()">
       </div>
-
     </div>
     
   </div>
