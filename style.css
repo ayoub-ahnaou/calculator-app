@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(219, 242, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    background: white;
+    width: 450px;
+    height: 600px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.445);
+    border-radius: 10px;
+    background: #222236;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+input {
+    width: 24%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.034), 5px 5px 15px rgba(0, 0, 0, 0.233);
+    height: 80px;
+    font-size: 20px;
+}
+
+.display input {
+    width: 100%;
+    text-align: right;
+    font-size: 45px;
+    padding: 20px;
+    height: 100px;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.equal {
+    width: 50%;
+}
+
+.operator {
+    color: rgb(229, 255, 0);
+}
